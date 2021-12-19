@@ -56,10 +56,6 @@
 								<argument>build</argument>
 								<argument>-t</argument>
 								<argument>${docker.user}/${project.artifactId}:${project.version}</argument>
-								<argument>-t</argument>
-								<argument>ibot-cpu</argument>
-								<argument>-m</argument>
-								<argument>2g</argument>
 								<argument>.</argument>
 							</arguments>
 							<longModulepath>false</longModulepath>
