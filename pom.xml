@@ -56,6 +56,12 @@
 								<argument>build</argument>
 								<argument>-t</argument>
 								<argument>${docker.user}/${project.artifactId}:${project.version}</argument>
+								<argument>-f</argument>
+								<argument>Dockerfile.cpu</argument>
+								<argument>-t</argument>
+								<argument>ibot-cpu</argument>
+								<argument>-m</argument>
+								<argument>1g</argument>
 								<argument>.</argument>
 							</arguments>
 							<longModulepath>false</longModulepath>
@@ -95,9 +101,8 @@
 							<workingDirectory>${project.basedir}</workingDirectory>
 							<arguments>
 								<argument>push</argument>
-								<argument>brijeshbhomkar/test-e2e:0.0.1-SNAPSHOT</argument>
+								<argument>${docker.user}/${project.artifactId}:${project.version}</argument>
 							</arguments>
-							<longModulepath>false</longModulepath>
 						</configuration>
 					</execution>
 				</executions>
