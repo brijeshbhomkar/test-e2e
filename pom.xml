@@ -37,6 +37,9 @@
 
 	<build>
 		<plugins>
+
+			<!-- This image is pushed to the docker repository -->
+			<!--
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
@@ -62,7 +65,6 @@
 						</configuration>
 					</execution>
 
-					<!-- Login and Push the image to a docker repo. -->
 					<execution>
 						<id>docker-login</id>
 						<phase>deploy</phase>
@@ -95,14 +97,18 @@
 							<workingDirectory>${project.basedir}</workingDirectory>
 							<arguments>
 								<argument>push</argument>
-								<argument>brijeshbhomkar/test-e2e:0.0.1-SNAPSHOT</argument>
+								<argument>${docker.user}/${project.artifactId}:${project.version}</argument>
 							</arguments>
 							<longModulepath>false</longModulepath>
 						</configuration>
 					</execution>
 				</executions>
-
 			</plugin>
+
+
+-->
+
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
