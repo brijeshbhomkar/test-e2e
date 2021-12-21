@@ -4,7 +4,7 @@ EXPOSE 9082
 RUN mkdir -p /app/
 RUN mkdir -p /app/logs/
 RUN pwd
-WORKDIR /var/lib/jenkins/workspace/test-e2e
+WORKDIR /var/lib/jenkins/workspace/
 RUN ls -lrt
 ADD ./target/test-e2e-0.0.1-SNAPSHOT.jar /app/test-e2e.jar
 ENTRYPOINT ["java", "-jar", "/app/test-e2e.jar"]
