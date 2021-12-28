@@ -8,6 +8,6 @@ public class TestController {
 
     @GetMapping("/test")
     public String test() {
-        return "Running successfully!";
+        return "Running successfully on aws ec2!";
     }
 }
