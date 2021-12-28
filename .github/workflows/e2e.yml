@@ -83,7 +83,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
 
-    steps:    
+    steps:
+    - uses: actions/checkout@v2
     - name: Download test-e2e-artifact
       uses: actions/download-artifact@v2
       with:
