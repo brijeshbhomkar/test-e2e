@@ -33,7 +33,7 @@ on:
 
 env:
   AWS_REGION: ap-south-1                                                           # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: 174598907921.dkr.ecr.ap-south-1.amazonaws.com/test-e2e           # set this to your Amazon ECR repository name
+  ECR_REPOSITORY: test-e2e           # set this to your Amazon ECR repository name
   ECS_SERVICE: test-e2e-service                 # set this to your Amazon ECS service name
   ECS_CLUSTER: test-e2e-cluster                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: test-e2e-task                                               # set this to the path to your Amazon ECS task definition
