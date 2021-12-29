@@ -37,6 +37,9 @@
 
 	<build>
 		<plugins>
+
+			<!-- This image is pushed to the docker repository -->
+			<!--
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
@@ -68,7 +71,6 @@
 						</configuration>
 					</execution>
 
-					<!-- Login and Push the image to a docker repo. -->
 					<execution>
 						<id>docker-login</id>
 						<phase>deploy</phase>
@@ -106,8 +108,12 @@
 						</configuration>
 					</execution>
 				</executions>
-
 			</plugin>
+
+
+-->
+
+
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
